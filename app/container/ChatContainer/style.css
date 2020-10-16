@@ -1,0 +1,58 @@
+/*布局*/
+.msg_container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: scroll;
+    background-color: lightgrey;
+    word-break: break-all;
+}
+
+.input_container {
+    width: 100%;
+    position: absolute;
+    margin-top: 500px;
+    display: flex;
+}
+
+.input_select_container {
+    flex-basis: 30px;
+    cursor: pointer;
+    height: 30px;
+    font-size: 40px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.input_select {
+    height: 0;
+    width: 0;
+}
+
+.input_input {
+    height: 30px;
+    flex-grow: 1;
+}
+
+.input_button {
+    height: 30px;
+    margin-left: 10px;
+    flex: 0 1 90px;
+}
+
+/* 系统欢迎样式 */
+.system_welcome {
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+}
+
+/* 消息样式 */
+.user_message img{
+    max-width: 150px;
+    max-height: 200px;
+}
+
+.user_self {
+    text-align: right;
+}

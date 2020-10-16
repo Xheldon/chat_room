@@ -1,0 +1,50 @@
+{
+  "name": "chat_room",
+  "version": "0.0.1",
+  "description": "a simply chat room",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.3.0",
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "postcss-loader": "^4.0.4",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^2.0.0",
+    "wait-on": "^5.2.0",
+    "webpack": "^5.1.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-middleware": "^3.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node webpack/dev-server",
+    "build": "webpack --config webpack/webpack.config.js",
+    "start": "concurrently \"npm run dev\" \"wait-on http://localhost:10086 && node server/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xheldon/chat_room.git"
+  },
+  "author": "Xheldon<c1006044256@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xheldon/chat_room/issues"
+  },
+  "homepage": "https://github.com/Xheldon/chat_room#readme"
+}

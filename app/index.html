@@ -1,0 +1,13 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <% if (htmlWebpackPlugin.options.data.title) {%>
+    <title><%- htmlWebpackPlugin.options.data.title %></title>
+    <%} else {%>
+    <title>首页</title>
+    <%}%>
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>
